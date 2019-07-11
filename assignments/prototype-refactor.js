@@ -25,8 +25,8 @@ Prototype Refactor
         }
     }
 // function GameObject(charAtt) {
-    // this.createdAt = charAtt.createdAt;
-    // this.dimensions = charAtt.dimensions;
+//     this.createdAt = charAtt.createdAt;
+//     this.dimensions = charAtt.dimensions;
 //   }
   
 //   GameObject.prototype.destroy = function () {
@@ -158,7 +158,7 @@ class CharacterStats extends GameObject{
     language: 'Elvish',
   });
   
-  console.log(mage.createdAt); // Today's date
+  console.log(mage.createdAt, "Prototype-Refactor"); // Today's date
   console.log(archer.dimensions); // { length: 1, width: 2, height: 4 }
   console.log(swordsman.healthPoints); // 15
   console.log(mage.name); // Bruce
@@ -167,7 +167,7 @@ class CharacterStats extends GameObject{
   console.log(archer.language); // Elvish
   console.log(archer.greet()); // Lilith offers a greeting in Elvish.
   console.log(mage.takeDamage()); // Bruce took damage.
-  console.log(swordsman.destroy()); // Sir Mustachio was removed from the game.
+  console.log(swordsman.destroy(), "Prototype-Refactor"); // Sir Mustachio was removed from the game.
   
   
   // Stretch task:
